@@ -18,4 +18,5 @@ class Building {
     this._sqft = value;
   }
 }
+
 export default Building;
