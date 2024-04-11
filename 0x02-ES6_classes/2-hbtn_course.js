@@ -5,9 +5,7 @@ class HolbertonCourse {
     this._students = students;
   }
 
-   /**
-   * @parametre of string name
-   */
+   
   set name(name) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
@@ -15,9 +13,6 @@ class HolbertonCourse {
     this._name = name;
   }
 
-   /**
-   * @parametre of lentgh of the numbers
-   */
    set length(length) {
     if (typeof length !== 'number') {
       throw new TypeError('Length must be a number');
@@ -25,12 +20,9 @@ class HolbertonCourse {
     this._length = length;
   }
 
-   /**
-   * @parametre of students
-   */
    set students(students) {
     if (!Array.isArray(students) || !students.every(s => typeof s === 'string')) {
-      throw new TypeError('Students must be an Array');
+      throw new TypeError('Students must be an Array of Strings');
     }
     this._students = students;
   }
