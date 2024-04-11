@@ -18,4 +18,6 @@ export default class Building {
     if (typeof sqft !== 'number') {
       throw new Error('sqft must be a number');
     }
+	   this._sqft = sqft;
+  }
 }
