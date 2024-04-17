@@ -1,3 +1,4 @@
+// import from interface
 import { RowID, RowElement } from './interface';
 declare function insertRow(row: RowElement): RowID;
 declare function deleteRow(rowId: RowID): void;

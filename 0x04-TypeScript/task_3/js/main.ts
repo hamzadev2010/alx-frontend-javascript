@@ -1,3 +1,4 @@
+// import the row and row element from interace
 import { RowID, RowElement } from "./interface";
 import * as CRUD from "./crud";
 
