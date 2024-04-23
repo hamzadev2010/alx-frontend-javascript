@@ -1,8 +1,8 @@
-const updateStudentGradeByCity = (students, city, newGrades) => {
-  const updatedStudents = students.map((student) => {
+const updateStudentGradeByCity = (studentsList, city, newGrades) => {
+  return studentsList.map((student) => {
     if (student.location === city) {
       const sameGrade = newGrades.find((grade) => grade.studentId === student.id);
-      if (matchingGrade) {
+      if (sameGrade) {
         return { ...student, grade: sameGrade.grade };
       } else {
         return { ...student, grade: 'N/A' };
@@ -11,7 +11,6 @@ const updateStudentGradeByCity = (students, city, newGrades) => {
       return student;
     }
   });
-  return updatedStudents;
 };
 
 export default updateStudentGradeByCity;
